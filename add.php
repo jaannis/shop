@@ -33,14 +33,7 @@
                     <label for="name">Name</label>
                     <input class="form-control" id="name" type="text" name="name" required>
                     </div>
-            </div>
-            <div class="form-group row">
-                <div class="col-xs-2"> 
-                <label for="name">Size</label>
-                <input class="form-control" id="sizeFieldInput" type="text" name="size">
-                <p>Please provide information about product size in MB.</p>
-                </div>
-            </div>
+            </div>          
             <div class="form-group row">
                 <div class="col-xs-2">                        
                     <label for="price">Price</label>

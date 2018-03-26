@@ -3,7 +3,7 @@ require 'functions.php';
 
 // take from function php function to insert into database
 
-$insert = insert($pdo, 'lists',[
+insert($pdo, 'lists',[
 
     'sku' => $_POST['sku'],
     'name' => $_POST['name'],
