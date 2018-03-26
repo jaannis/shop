@@ -1,0 +1,31 @@
+   .container {
+    max-width: 100%;
+    padding: 30px;
+  }
+   
+  .header{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom-style: solid;   
+  }
+
+  .col-md-2{
+    margin: 40px;
+    padding: 10px;
+    border-style: solid;
+    text-align: center;
+  }
+  .form-check-input{
+    float: left;    
+  }
+  .checkbox{
+    position: absolute;
+    top:0;
+    left:25px;
+  }
+  #checkAll{
+    margin-top:10px;    
+  }
+  /* #sizeField, #dimensionField, #weightField{
+    display: none;
+  } */
