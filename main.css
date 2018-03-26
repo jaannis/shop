@@ -28,4 +28,5 @@
   }
   #sizeField, #dimensionField, #weightField{
     display: none;
+    width: 200px;
   }
