@@ -1,10 +1,9 @@
 <?php
-require 'functions.php';
 
-// take from function php function to insert into database
+require 'core/QueryBuilder.php';
 
-insert($pdo, 'lists',[
-
+// uses QueryBuilder function to insert into database
+$database->insert('lists',[
     'sku' => $_POST['sku'],
     'name' => $_POST['name'],
     'price' => $_POST['price'],
@@ -15,6 +14,5 @@ insert($pdo, 'lists',[
     'length' =>$_POST['length'],
     'weight' =>$_POST['weight']    
     ]);
-  
-  
-header('Location: add.php');
+    
+header('Location: views/add.php');

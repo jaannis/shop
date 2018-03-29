@@ -4,11 +4,10 @@
     <head>
         <title></title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link href="main.css" rel="stylesheet" type="text/css"/>
+        <link href="/style/main.css" rel="stylesheet" type="text/css"/>
     </head>
-    <body>
-      
-     <form action="adding.php" method="POST" >
+<body>      
+  <form action="../controllers/adding.php" method="POST">
         <div class="header container-fluid">
             <div class="row">
             <div class="col-md-9">
@@ -33,7 +32,7 @@
                     <label for="name">Name</label>
                     <input class="form-control" id="name" type="text" name="name" required>
                     </div>
-            </div>          
+            </div>
             <div class="form-group row">
                 <div class="col-xs-2">                        
                     <label for="price">Price</label>
@@ -43,7 +42,7 @@
             <div class="form-group row">
                 <div class="col-xs-2">
                     <label for="type">Type Switcher</label>                             
-                    <select class="form-control" name="type" id="typeSwitcher" onchange="fieldInput(this);">
+                    <select class="form-control" name="type" id="typeSwitcher"  onchange="fieldInput(this);" required>
                         <option disabled selected value> -- select an option -- </option>
                         <option id="size" value="Size">Size</option>
                         <option id="dimensions" value="Dimensions">Dimensions</option>
@@ -51,7 +50,7 @@
                     </select> 
                     </div>
             </div>
-            <!-- hidden part -->
+            <!-- hidden part, which should open when correct option is set -->
             <div class="form-group row" id="sizeField">
                 <div class="col-xs-2"> 
                 <label for="name">Size</label>
@@ -82,13 +81,12 @@
             </div>
         </div>
      </div>
-    </form>
-         
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    </form>          
+   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-    <script src="main.js" type="text/javascript"></script>
-    </div></body>
-    </html>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/style/main.js" type="text/javascript"></script>
+    </div>
+    </body>
+</html>

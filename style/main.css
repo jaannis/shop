@@ -15,17 +15,21 @@
     border-style: solid;
     text-align: center;
   }
+
   .form-check-input{
     float: left;    
   }
+
   .checkbox{
     position: absolute;
     top:0;
     left:25px;
   }
+
   #checkAll{
     margin-top:10px;    
   }
+  
   #sizeField, #dimensionField, #weightField{
     display: none;
     width: 200px;

@@ -1,0 +1,9 @@
+Install guide
+
+1. Open config.php and change database values.
+2. Open index.php find this line: $lists = $database->selectAll('lists').
+    Change 'lists' to different table name.
+3. Open controllers/adding.php and find this line: $database->insert('lists'.
+    Change 'lists' to different table name.
+4. Open controllers/delete.php and find this line: $database->delete('lists'.
+    Change 'lists' to different table name.

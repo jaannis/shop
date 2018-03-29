@@ -1,11 +1,8 @@
 <?php
 
+//boots up database
+require 'core/boot.php';
 
-require 'functions.php';
+//opens first page
+require 'controllers/product.php';
 
-//get list from database to show in product page
-$lists = selectAll($pdo, 'lists');
-
-
-   
-require 'product.php';
