@@ -1,10 +1,8 @@
 <?php
 
-require 'core/boot.php';
-// var_dump($database);
-// die;
 // uses QueryBuilder function to from database using product id
-$database->delete('lists',[
+$connect = new QueryBuilder($pdo);
+$delete  = $delete->delete('lists', [
     'ID' => $_POST['id']
     ]);
 

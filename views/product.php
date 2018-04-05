@@ -37,8 +37,9 @@
                     <h4><?=$list->type; ?>: 
                     <?php if ($list->type == "Size") :?> <?=$list->size; ?> MB
                     <?php elseif ($list->type == "Dimensions") :?> <?=$list->height; ?>x<?=$list->width; ?>x<?=$list->length; ?> cm
-                    <?php else :?> <?=$list->weight; ?> Kg </h4> 
+                    <?php else :?> <?=$list->weight; ?> Kg 
                     <?php endif; ?>
+                    </h4> 
               </div>    
             <?php endforeach; ?> 
             </form>        
